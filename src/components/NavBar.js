@@ -9,20 +9,20 @@ const styles = makeStyles({
     bar: {
         paddingTop: "1.15rem",
         backgroundColor: "#fff",
-        ['@media (max-width:780px)']: {
+        '@media (max-width:780px)': {
             flexrection: "column"
         }
     },
     logo: {
         width: "15%",
-        ['@media (max-width:780px)']: {
+        '@media (max-width:780px)': {
             display: "none"
         }
     },
     logoMobile: {
         width: "100%",
         display: "none",
-        ['@media (max-width:780px)']: {
+        '@media (max-width:780px)': {
             display: "inline-black"
         }
     },
@@ -30,9 +30,9 @@ const styles = makeStyles({
         cursor: "pointer",
         flexGrow: 1,
         "&:hover": {
-            color: "purple"
+            color: "red"
         },
-        ['@media (max-width:780px)']: {
+        '@media (max-width:780px)': {
             paddingBottom: "1rem"
         }
     },
@@ -42,8 +42,8 @@ function NavBar() {
     const classes= styles()
     return (
         <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>
-            <img src={logo} className={classes.logo} />
-            <img src={logoMobile} className={classes.logoMobile} />
+            <img src={logo} className={classes.logo} alt="The logo"/>
+            <img src={logoMobile} className={classes.logoMobile} alt="The mobile logo" />
             <Typography variant="h6" className={classes.menuItem}>
                 About
             </Typography>
